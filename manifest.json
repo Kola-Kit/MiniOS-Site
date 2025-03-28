@@ -1,6 +1,6 @@
 {
-  "name": "api",
-  "short_name": "api",
+  "name": "TestSite",
+  "short_name": "TestSite",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFFFFF",
