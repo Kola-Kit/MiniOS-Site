@@ -9,6 +9,7 @@ import hashlib
 import webbrowser
 from urllib.parse import parse_qs
 import requests
+import os
 
 def get_usd_rate():
     try:
@@ -1183,4 +1184,4 @@ def main(page: ft.Page):
 
 # Запуск приложения
 if __name__ == "__main__":
-    ft.app(target=main, view=None, port=8501)
+    ft.app(target=main, view=None, port=int(os.environ.get("PORT", 8000)),)
